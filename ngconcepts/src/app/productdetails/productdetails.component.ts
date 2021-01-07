@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductdetailsComponent implements OnInit {
   hrefVal = "https://www.google.com";
-  data = "value";
+  data = "directive";
   color = "red";
+  validate = false;
+  arr = [
+    {name: "first"},
+    {name: "second"},
+    {name: "third"},
+
+  ]
   method(){
     this.color = "grey";
   }

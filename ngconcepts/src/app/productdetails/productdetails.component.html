@@ -1,20 +1,32 @@
 <p>productdetails works!</p>
-<p [style.color] = 'color'>{{ data }} {{ 1 + 2 }}</p>
-<div (click) = 'method()'> click on content </div>
+<p [style.color] = "color">{{ data }} {{ 1 + 2 }}</p>
+<div (click) = "method()"> click on content </div>
 <!-- <input type="text" (keyup) = "update($event.target.value)"> -->
 <!-- <input type="text" (keyup.enter) = "update($event.target.value)"> -->
 <input type="text" #user (keyup) = "update(user.value)" placeholder="template refernce var">
 <input type="text" value = "{{color}}">
 <input type="text" [value] = "color">
 <a href="{{ hrefVal }}"> google </a>
-<a [href]=" hrefVal"> google 1 </a>
+<a [href]=" hrefVal"> google 1 </a><br>
+<!-- two way binding  -->
+<input type="text" [(ngModel)] = "data"><br> 
+<input type="text" (ngModelChange) = "method()" [ngModel] = "data">
+
+<!-- structural directives  -->
+
+<div *ngIf = "validate"> structural directive </div>
+<ul>
+    <li [ngClass] = "{ listtype : true, modify: 2 < 1 }" *ngFor = "let item of arr"> {{item.name}} </li>
+</ul>
+
+
+ 
 
 
 
 
 
 
-cd 
 
 
 

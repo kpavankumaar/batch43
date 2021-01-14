@@ -16,6 +16,10 @@ export class ProductdetailsComponent implements OnInit {
     {name: "third"},
 
   ]
+
+  recieveDataFromChildComp(data){
+    console.log(data);
+  }
   method(){
     this.color = "grey";
   }

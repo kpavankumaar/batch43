@@ -1,4 +1,5 @@
-<p>productdetails works!</p>
+<app-product [parentColor] = "color" (shareData) = "recieveDataFromChildComp($event)"></app-product>
+<p increaseSize >productdetails works!</p>
 <p [style.color] = "color">{{ data }} {{ 1 + 2 }}</p>
 <div (click) = "method()"> click on content </div>
 <!-- <input type="text" (keyup) = "update($event.target.value)"> -->
